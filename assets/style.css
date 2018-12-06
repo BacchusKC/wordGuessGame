@@ -174,7 +174,7 @@ body {
     color: white;
 }
 .active:hover {
-    cursor: not-allowed!important;
+    cursor: default!important;
     background-color: antiquewhite!important;
     color: #666666!important;
     border: 0!important;
