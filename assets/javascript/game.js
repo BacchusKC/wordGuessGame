@@ -13,7 +13,8 @@ var lost = "Sorry, you lost...";
 var won = "You Won!";
 var gameover = true;
 var pressStart = "Press Start"
-var hitReset = "Press Reset to play again." 
+var hitReset = "Press Reset to play again.";
+var audio = new Audio("assets/music/castlevania.mp3"); 
 
 scoreFunction ();
 alert("Start button on controller, reset button on console");
@@ -35,6 +36,7 @@ function clear(){
     document.getElementById("letterButtons").innerHTML = "";
     document.getElementById("displayWord").innerHTML = "";
     document.getElementById("replay").innerHTML = "";
+    audio.pause();
 }
 function contains(arr, el) {
     for (var i = 0; i < arr.length; i++) {
@@ -100,6 +102,8 @@ function testResult () {
         document.getElementById("replay").innerHTML = hitReset;
         losses++
         scoreFunction();
+        audio = new Audio("assets/music/gameover.mp3");
+        audio.play();
     }
 }
 function win () {
@@ -107,10 +111,14 @@ function win () {
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/castlevania.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Castlevania";
+        audio = new Audio("assets/music/castlevania.mp3");
+        audio.play();
     }else if (displayedWord === "contra"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/contra.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Contra";
+        audio = new Audio("assets/music/contra.mp3");
+        audio.play();
     }else if (displayedWord === "fortnite"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/fortnite.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
@@ -119,38 +127,56 @@ function win () {
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/mario.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Super Mario Bros.";
+        audio = new Audio("assets/music/mario.mp3");
+        audio.play();
     }else if (displayedWord === "metroid"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/metroid.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Metroid";
+        audio = new Audio("assets/music/metroid.mp3");
+        audio.play();
     }else if (displayedWord === "minecraft"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/minecraft.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Minecraft";
+        audio = new Audio("assets/music/minecraft.mp3");
+        audio.play();
     }else if (displayedWord === "paperboy"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/paperboy.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Paperboy";
+        audio = new Audio("assets/music/paperboy.mp3");
+        audio.play();
     }else if (displayedWord === "pokemon"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/pokemon.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Pokemon";
+        audio = new Audio("assets/music/pokemon.mp3");
+        audio.play();
     }else if (displayedWord === "spiderman"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/spiderman.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Spider-Man";
+        audio = new Audio("assets/music/spiderman.mp3");
+        audio.play();
     }else if (displayedWord === "tetris"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/tetris.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Tetris";
+        audio = new Audio("assets/music/tetris.mp3");
+        audio.play();
     }else if (displayedWord === "uncharted"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/uncharted.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "Uncharted";
+        audio = new Audio("assets/music/uncharted.mp3");
+        audio.play();
     }else if(displayedWord === "zelda"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/zelda.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
         document.getElementById("displayWord").innerHTML = "The Legend of Zelda";
+        audio = new Audio("assets/music/zelda.mp3");
+        audio.play();
     }
 }
 
