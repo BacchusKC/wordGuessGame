@@ -146,7 +146,7 @@ body {
 }
 #alphabet {
     padding:0;
-    max-width:470px;
+    max-width:440px;
     margin: 0;
 }
 #alphabet li {
@@ -173,14 +173,25 @@ body {
     border: solid 1px black;
     color: white;
 }
+.active:hover {
+    cursor: not-allowed!important;
+    background-color: antiquewhite!important;
+    color: #666666!important;
+    border: 0!important;
+}
 .active {
-    cursor: not-allowed;
+    color: #666666!important;
+    background-color: antiquewhite!important;
+    border: 0!important;
 }
 .wordArea {
     margin-top: 30px;
     text-align: center;
     line-height: 30px;
     float: left
+}
+#replay {
+    margin-top: 30px;
 }
 .footer {
     position: absolute;
