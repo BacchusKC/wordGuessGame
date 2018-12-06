@@ -228,6 +228,12 @@ body {
         bottom: 29%;
         right:51.9%;
     }
+    #screen {
+        width: 64.8%;
+        bottom: 49.6%;
+        right: 16.8%;
+    }
+
 }
 @media screen and (max-width: 537px){
     .headerText {
@@ -235,7 +241,7 @@ body {
     }
     .wordArea {
         margin-top: 50px;
-        /* float: left; */
+        float: right;
     }
     .button1 {
         padding: 0 1%;
@@ -246,5 +252,10 @@ body {
         padding: 0 1%;
         bottom: 27.1%;
         right:50.1%;
+    }
+    #screen {
+        width: 64%;
+        bottom: 48%;
+        right: 16.8%;
     }
 }
