@@ -197,23 +197,54 @@ body {
     position: absolute;
     height: 80px;
     width: 100%;
-    background-color: #666666;
-    border-top: 5px solid #4aaaa5;
+    background-color: gold;
+    border-top: 5px solid lightskyblue;
     bottom: 0;
     margin-top: 30px;
 }
 .copyright {
-    color: #ffffff;
+    color: dodgerblue;
     text-align: center;
     width: 100%;
     padding-top: 40px;
     margin: auto;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-  
-
-@media screen and (max-width: 635px){
+@media screen and (max-width: 991px){
+    .button1 {
+        padding: 0 0.5%;
+        bottom: 37.5%;
+        right:30%;
+    }
+    .button2 {
+        padding: 0 0.5%;
+        bottom: 29%;
+        right:51.9%;
+    }
+}
+@media screen and (max-width: 537px){
     .headerText {
         padding-top: 5px;
     }
-} 
+    .wordArea {
+        margin-top: 50px;
+        /* float: left; */
+    }
+    .button1 {
+        padding: 0 1%;
+        bottom: 35.2%;
+        right:29%;
+    }
+    .button2 {
+        padding: 0 1%;
+        bottom: 27.1%;
+        right:50.1%;
+    }
+}

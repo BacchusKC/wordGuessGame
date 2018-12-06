@@ -118,7 +118,7 @@ function win () {
     }else if (displayedWord === "mario"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/mario.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
-        document.getElementById("displayWord").innerHTML = "Super Mario Bros";
+        document.getElementById("displayWord").innerHTML = "Super Mario Bros.";
     }else if (displayedWord === "metroid"){
         document.getElementById("tvImg").innerHTML = '<img id="screen" src="assets/images/metroid.jpg"/>';
         document.getElementById("topDisplay").innerHTML = won;
