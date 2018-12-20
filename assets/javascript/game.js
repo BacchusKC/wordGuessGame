@@ -17,7 +17,7 @@ var hitReset = "Press Reset to play again.";
 var audio = new Audio("assets/music/castlevania.mp3"); 
 
 scoreFunction ();
-alert("Start button on controller, reset button on console");
+alert("Start button on controller, reset button on console. Turn up volume for game audio on win.");
 
 function buttons() {
     myButtons = document.getElementById("letterButtons");

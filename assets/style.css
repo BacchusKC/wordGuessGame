@@ -194,7 +194,7 @@ body {
     margin-top: 30px;
 }
 .footer {
-    position: absolute;
+    position: initial;
     height: 80px;
     width: 100%;
     background-color: gold;
